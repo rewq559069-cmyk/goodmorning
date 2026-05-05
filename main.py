@@ -9,9 +9,9 @@ import cloudinary.uploader
 #
 # ##cloudinary 雲端 設定--begin
 cloudinary.config(
-    cloud_name="dzooazvcg",
-    api_key="834827243845633",
-    api_secret="8L0uzuxRZ4gksvnTTpMfX90Xnqs"
+    cloud_name=os.environ.get("CLOUDINARY_CLOUD_NAME"),
+    api_key=os.environ.get("CLOUDINARY_API_KEY"),
+    api_secret=os.environ.get("CLOUDINARY_API_SECRET")
 )
 # ##cloudinary 雲端 設定--end
 #
