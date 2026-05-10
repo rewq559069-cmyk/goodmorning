@@ -6,6 +6,7 @@ import datetime
 from opencc import OpenCC
 import cloudinary
 import cloudinary.uploader
+import os
 #
 # ##cloudinary 雲端 設定--begin
 cloudinary.config(
